@@ -1,12 +1,11 @@
-
+import Screen from "./Screen/Screen";
+import Hero from "./Section/Hero"
 
 function App() {
-
-
   return (
-    <>
-   <p className="bg-yellow-400">Hello</p>   
-    </>
+  <Screen>
+   <Hero />
+  </Screen>
   )
 }
 
