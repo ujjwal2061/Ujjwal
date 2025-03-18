@@ -15,36 +15,38 @@ export default function Hero() {
     }
 
   return (
-    <section className=" text-white  flex flex-col md:items-center   py-2 gap-5 justify-center">
-            <div className=" flex   md:w-1/2 px-4 h-[210px] gap-1  py-7 rounded-md   ">
-            <img src={ProfileImg} className="w-40 h-36 cursor-pointer   object-cover  rounded-md" />
-            <div className="flex flex-col ">
-             <div className="flex  mt-2  md:mt-4 flex-col gap-1">
-            <h1 className=" text-3xl  flex items-center md:text-4xl gap-2  font-semibold">Ujjwal Gaihre
-            <span className="text-green-400 font-semibold text-sm items-center drop-shadow-[0_0_6px_#22c55e] mt-1  flex">Available<GoDotFill  className="mt-0.5"/></span>
+    <section className="  text-white  flex flex-col md:items-center sm:px-6 lg:px-8  py-2 gap-5 justify-center">
+            <div className=" relative   flex  w-full md:w-[615px]   lg:w-[815px] px-4 gap-1  py-7 rounded-md   ">
+            <div className="w-24 h-24 md:w-28 md:h-28 lg:w-36 lg:h-36 overflow-hidden rounded-md">
+             <img src={ProfileImg} className="w-full h-full object-cover aspect-square cursor-pointer"/>
+            </div>
+            <div className="flex  lg:mt-6 flex-col w-full items-start ">
+             <div className="flex flex-col ">
+            <h1 className=" text-3xl   lg:text-4xl  flex gap-2 items-center  flex-row justify-center font-semibold">Ujjwal Gaihre
+            <span className="absolute -top-2 left-2  md:static lg:static text-green-400 font-semibold mt-2   px-3 h-8   rounded-lg text-[13px] md:text-sm items-center drop-shadow-[0_0_6px_#22c55e]  flex">Available<GoDotFill  className="mt-0.5"/></span>
             </h1>
             <p className=" ml-1 text-[14px] md:text-[16px]  font-semibold">Software Engineer</p>
                 </div>
-            <div className="flex flex-row gap-2  px-1 p py-1">
-                <Link to="https://github.com/ujjwal2061" target="_blank"  className="relative group " ><IoLogoGithub  size={22} />
-                        <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block text-black font-serif bg-white p-2 rounded text-xs">
+            <div className="flex flex-row  items-start gap-1  px-1  py-1">
+                <Link to="https://github.com/ujjwal2061" target="_blank"  className="relative group " ><IoLogoGithub  size={24} />
+                <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block text-black font-serif bg-white p-2 rounded text-xs">
                     Github
                 </span>
                 </Link>
-                <Link to="https://www.linkedin.com/in/ujjwal-gaihre-9719ba289/" target="_blank" className="relative group"><FaLinkedin size={22} />
+                <Link to="https://www.linkedin.com/in/ujjwal-gaihre-9719ba289/" target="_blank" className="relative group"><FaLinkedin size={24} />
                 <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block text-black font-serif bg-white p-2 rounded text-xs">
-                LinkedIn
+                    LinkedIn
                 </span></Link>
-                <Link to="https://x.com/Ujjwal_2061"  className="relative group "><RiTwitterXFill size={22} />
+                <Link to="https://x.com/Ujjwal_2061"  className="relative group "><RiTwitterXFill size={24} />
                 <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block text-black font-serif bg-white p-2 rounded text-xs">
-                Twitter
+                  Twitter
                 </span>
                 </Link>
             </div>
             </div>
             </div>
-            <div className="p-2 md:w-1/2">
-            <div className=" ">
+            <div className="  lg:w-[815px]  md:w-[615px]   ">
+            <div className="px-3 ">
              <h1 className="text-2xl underline mb-2  font-semibold">About Me</h1>
              {IsShow ? (
                 <>

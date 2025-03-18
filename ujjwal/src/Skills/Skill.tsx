@@ -7,7 +7,7 @@ export interface Skill{
     icons:ReactNode
 }
 const IconsMap:Record<string,ReactNode>={
-    React: <FaReact size={20} />,
+    ReactJs: <FaReact size={20} />,
     JavaScript: <SiJavascript size={20}  />,
     TypeScript: <SiTypescript size={20}   />,
     Tailwindcss: <SiTailwindcss  size={20}/>,
