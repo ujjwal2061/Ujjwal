@@ -10,8 +10,8 @@
       <h1 className="px-2 font-semibold underline text-2xl">Projects</h1>
      <div className=" px-2">
         {project.map((project,index)=>{
-           return <div key={index} className="bg-zinc-800 hover:bg-zinc-900 bg-opacity-50 border-2  border-zinc-700 rounded-md  m-2">
-                <div className="px-3 py-4 cursor-pointer h-52 rounded-md ">
+           return <div key={index} className="bg-zinc-800  hover:bg-zinc-900 bg-opacity-50 border-2  border-zinc-700 rounded-md  m-2">
+                <div className="px-3 py-4 cursor-pointer h-40  md:h-52 rounded-md ">
                 <img src={project.img}  className="object-cover w-full h-full rounded-lg"/>
                 </div>
                 <div className="px-2 rounded-md">
@@ -32,7 +32,7 @@
                 </Link> 
                 </div>
                 </div>
-                <p className="px-2 py-1 text-zinc-400 text-[16px] font-medium">{project.description}</p>
+                <p className="px-2 py-1 text-zinc-400  text-[15px] md:text-[16px] font-medium">{project.description}</p>
                 </div>
             </div>
         })}

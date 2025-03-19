@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaGithub } from "react-icons/fa";
 import { SiTypescript, SiJavascript, SiTailwindcss, SiExpress, SiFirebase, SiMongodb, SiPostman, SiRedux, SiFramer, SiNextdotjs, SiVercel } from "react-icons/si";
-
+import { SiShadcnui } from "react-icons/si";
 export interface Skill{
     name:string,
     icons:ReactNode
@@ -19,7 +19,7 @@ const IconsMap:Record<string,ReactNode>={
     Redux: <SiRedux  size={20} />,
     Motion: <SiFramer  size={20}/>,
     NextJs: <SiNextdotjs size={20}  />,
-    ShadcnUI: <SiTailwindcss size={20} />,
+    ShadcnUI: <SiShadcnui />,
     Figma: <FaFigma  size={20} />,
     Git: <FaGitAlt size={20} />,
     Vercel: <SiVercel size={20} />,
