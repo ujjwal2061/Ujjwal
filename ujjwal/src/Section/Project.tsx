@@ -3,10 +3,18 @@
  import { FaGithub } from "react-icons/fa";
  import { TbBrandLivewire } from "react-icons/tb";
  import { GoDotFill } from "react-icons/go";
+ import { motion } from "motion/react";
+
  export default  function Project(){
+   
     return(
-<section className="text-white flex flex-col md:items-center justify-center gap-2">
-    <div className="md:w-[615px]  lg:w-[815px]   flex flex-col  w-full" >
+<motion.section 
+    initial={{opacity:0,y:20}}
+    animate={{opacity:1,y:0}}
+    transition={{duration:0.4,delay:0.7,ease:"easeOut"}}
+ className="text-white flex flex-col md:items-center justify-center gap-2">
+    <motion.div 
+    className="md:w-[615px]  lg:w-[815px]   flex flex-col  w-full" >
       <h1 className="px-2 font-semibold underline text-2xl">Projects</h1>
      <div className=" px-2">
         {project.map((project,index)=>{
@@ -37,7 +45,7 @@
             </div>
         })}
      </div>
-    </div>
-</section>
+    </motion.div>
+</motion.section>
     )
 }

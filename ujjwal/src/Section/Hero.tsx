@@ -6,17 +6,22 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaArrowRight } from "react-icons/fa";
 import { useState } from "react";
 import { GoDotFill } from "react-icons/go";
-
+import { motion } from "motion/react"
 export default function Hero() {   
     const [IsShow,setIshow]=useState(false)
-
+  
     const handleshow=()=>{
         setIshow((prevstate)=>!prevstate)
     }
 
   return (
-    <section className="  text-white  flex flex-col md:items-center sm:px-6 lg:px-8  py-2 gap-5 justify-center">
-            <div className=" relative   flex  w-full md:w-[615px]   lg:w-[815px] px-4 gap-1  py-7 rounded-md   ">
+    <motion.section
+    initial={{opacity:0,y:20}}
+    animate={{opacity:1,y:0}}
+    transition={{duration:0.4,delay:0.5,ease:"easeOut"}}
+    className="  text-white  flex flex-col md:items-center sm:px-6 lg:px-8  py-2 gap-5 justify-center">
+            <motion.div
+            className=" relative   flex  w-full md:w-[615px]   lg:w-[815px] px-4 gap-1  py-7 rounded-md   ">
             <div className="w-24 h-24 md:w-28 md:h-28 lg:w-36 lg:h-36 overflow-hidden rounded-md">
              <img src={ProfileImg} className="w-full h-full object-cover aspect-square cursor-pointer"/>
             </div>
@@ -44,7 +49,7 @@ export default function Hero() {
                 </Link>
             </div>
             </div>
-            </div>
+            </motion.div>
             <div className="  lg:w-[815px]  md:w-[615px]   ">
             <div className="px-3 ">
              <h1 className="text-2xl underline mb-2  font-semibold">About Me</h1>
@@ -95,6 +100,6 @@ export default function Hero() {
                 
             </div>
             </div>
-    </section>
+    </motion.section>
   )
 }

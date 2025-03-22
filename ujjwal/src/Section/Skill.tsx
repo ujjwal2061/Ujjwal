@@ -1,10 +1,15 @@
-
 import { SkillList } from "../Skills/Skill"
-export  default function Skill(){
+import { motion } from "motion/react";
 
+export  default function Skill(){
     return(
-        <section className=" text-white   flex flex-col md:items-center  gap-5 justify-center">
-         <div className="md:w-[615px]   lg:w-[815px]   p-2  flex flex-col  w-full">
+        <motion.section
+        initial={{opacity:0,y:50}}
+        animate={{opacity:1,y:0}}
+        transition={{duration:0.4,delay:0.6,ease:"easeOut"}}
+        className=" text-white   flex flex-col md:items-center  gap-5 justify-center">
+         <motion.div 
+         className="md:w-[615px]   lg:w-[815px]   p-2  flex flex-col  w-full">
         <h1 className="px-2 font-semibold underline text-2xl">Skill & Tools</h1>
         <div className="   p-2 grid  grid-cols-3  md:grid-cols-4 justify-center gap-1 mt-1">
              {SkillList.map((skill,index)=>(
@@ -16,7 +21,7 @@ export  default function Skill(){
               
              ))}
         </div>
-        </div>
-    </section>      
+        </motion.div>
+    </motion.section>      
     )
 }
