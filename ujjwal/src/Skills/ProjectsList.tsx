@@ -26,7 +26,7 @@ project1:{
     Built with MongoDB, Express.js, React.js, and Node.js, it features secure authentication using JWT (JSON Web Token). 
     Users can seamlessly list, browse, and book properties—all without relying on third-party services like Firebase or Cloudinary.`,
     githublink:"https://github.com/ujjwal2061/Booking-App",
-    livelink:"https://hoomy.vercel.app/allplaces",
+    livelink:"https://hoomy.vercel.app",
     img:"Project1.png"
 }
 }
