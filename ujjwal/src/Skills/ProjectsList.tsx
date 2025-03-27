@@ -21,12 +21,12 @@ img:"Project0.png"
 },
 project1:{
     name:"Homy",
-    IsComplete:"Building",
+    IsComplete:"Running",
     description:`Homy is a MERN-based web application that simplifies the process of finding and renting accommodations, similar to Airbnb. 
     Built with MongoDB, Express.js, React.js, and Node.js, it features secure authentication using JWT (JSON Web Token). 
     Users can seamlessly list, browse, and book properties—all without relying on third-party services like Firebase or Cloudinary.`,
     githublink:"https://github.com/ujjwal2061/Booking-App",
-    livelink:"",
+    livelink:"https://hoomy.vercel.app/allplaces",
     img:"Project1.png"
 }
 }
