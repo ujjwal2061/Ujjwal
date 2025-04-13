@@ -1,4 +1,6 @@
 
+import Project from "../Section/Project"
+
 interface Project{
     name:string,
     description:string,
@@ -28,6 +30,15 @@ project1:{
     githublink:"https://github.com/ujjwal2061/Booking-App",
     livelink:"https://hoomy.vercel.app",
     img:"Project1.png"
+},
+project2:{
+    name:'Writly',
+    IsComplete:"Building",
+    description:`Writly is Full Compelete Blogging web-application .Still in Building Process `,
+    githublink:"https://github.com/ujjwal2061/Pen-Post",
+    livelink:"https://writly-dot.vercel.app",
+    img:"Project2.png",
 }
 }
-export const project:Project[]=Object.values(ProjectList)
+export const allproject:Project[]=Object.values(ProjectList).slice(3)
+export const project:Project[]=Object.values(ProjectList).slice(0,3)

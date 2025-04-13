@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaGithub } from "react-icons/fa";
 import { SiTypescript, SiJavascript, SiTailwindcss, SiExpress, SiFirebase, SiMongodb, SiPostman, SiRedux, SiFramer, SiNextdotjs, SiVercel } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
+import { SiRedis } from "react-icons/si";
 export interface Skill{
     name:string,
     icons:ReactNode
@@ -24,6 +25,7 @@ const IconsMap:Record<string,ReactNode>={
     Git: <FaGitAlt size={20} />,
     Vercel: <SiVercel size={20} />,
     GitHub: <FaGithub  size={20}/>,
+    Redis: <SiRedis size={20} /> 
   };
   export const SkillList:Skill[]=Object.keys(IconsMap).map((key)=>({
     name:key,
