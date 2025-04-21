@@ -11,7 +11,7 @@ import { FaArrowRight } from "react-icons/fa";
 
  export default  function Project(){
    const [showing,setShowing]=useState<boolean>(false)
-   console.log("The Project lilst Project",project)
+  
    const showallProject=()=>{
     setShowing(preshow=>!preshow)
    }

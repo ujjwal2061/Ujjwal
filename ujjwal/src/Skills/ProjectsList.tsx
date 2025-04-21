@@ -13,7 +13,7 @@ interface Project{
 const ProjectList:Record<string,Project>={
 project0:{
 name:"Daily Planner",
-IsComplete:"Ruuning",
+IsComplete:"Running",
 description:`DailyPlanner is a web application designed to streamline task management with a single click. 
 It generates a concise summary of users' task lists and allows interactive chat with the generated summary. 
 Additionally, users can stay motivated by earning rewards for maintaining focus during 45-minute study sessions.`,
