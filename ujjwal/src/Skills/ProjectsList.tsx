@@ -33,12 +33,20 @@ project1:{
 },
 project2:{
     name:'Writly',
-    IsComplete:"Building",
-    description:`Writly is Full Compelete Blogging web-application .Still in Building Process `,
+    IsComplete:"Running",
+    description: "Built Writly, a complete social media application, to gain practical experience with CRUD operations and effectively design and consume RESTful APIs. The project focuses on real-world functionality like user interaction, post management, and dynamic content rendering.",
     githublink:"https://github.com/ujjwal2061/Pen-Post",
     livelink:"https://writly-dot.vercel.app",
     img:"Project2.png",
+},
+project3:{
+    name:"MeetaLogic",
+    IsComplete:"Running",
+    description: "MeetaLogic is a visually engaging web project where I focused heavily on modern styling and smooth animations to enhance user experience. The goal was to create a clean, interactive interface that feels dynamic and polished. Using responsive design principles and subtle animation effects, I brought life to the layout, making it both functional and aesthetically pleasing.",
+    githublink:"https://github.com/ujjwal2061/MetaLogic",
+    livelink:"https://meta-logic-xi.vercel.app/",
+    img:"Project3.png",
 }
 }
-export const allproject:Project[]=Object.values(ProjectList).slice(3)
-export const project:Project[]=Object.values(ProjectList).slice(0,3)
+export const allproject:Project[]=Object.values(ProjectList).slice(4)
+export const project:Project[]=Object.values(ProjectList).slice(0,4)
