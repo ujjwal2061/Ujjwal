@@ -8,6 +8,7 @@ interface Project{
     livelink:string,
     img:string,
     IsComplete:string,
+    techStack:string[];
 }
 
 const ProjectList:Record<string,Project>={
@@ -19,7 +20,8 @@ It generates a concise summary of users' task lists and allows interactive chat 
 Additionally, users can stay motivated by earning rewards for maintaining focus during 45-minute study sessions.`,
 githublink:"https://github.com/ujjwal2061/Daliy-Planner",
 livelink:"https://daliy-palnner.vercel.app/",
-img:"Project0.png"
+img:"Project0.png",
+techStack:["React","Firebase","Tailwind ","Redux","Gemini API"]
 },
 project1:{
     name:"Homy",
@@ -29,7 +31,8 @@ project1:{
     Users can seamlessly list, browse, and book properties—all without relying on third-party services like Firebase or Cloudinary.`,
     githublink:"https://github.com/ujjwal2061/Booking-App",
     livelink:"https://hoomy.vercel.app",
-    img:"Project1.png"
+    img:"Project1.png",
+    techStack:["React","Node.Js","Tailwind","Express","MongoDB","Cloudinary"]
 },
 project2:{
     name:'Writly',
@@ -38,6 +41,7 @@ project2:{
     githublink:"https://github.com/ujjwal2061/Pen-Post",
     livelink:"https://writly-dot.vercel.app",
     img:"Project2.png",
+    techStack:["React","Node.Js","Tailwind","Express","MongoDB","Cloudinary","Zustand"]
 },
 project3:{
     name:"MeetaLogic",
@@ -46,7 +50,18 @@ project3:{
     githublink:"https://github.com/ujjwal2061/MetaLogic",
     livelink:"https://meta-logic-xi.vercel.app/",
     img:"Project3.png",
+     techStack:["React","Motion","Tailwind"]
+},
+project4:{
+    name:"Newly.io",
+    IsComplete:"Running",
+  description: "A modern landing page crafted with smooth, eye-catching animations for an enhanced user experience. Built using powerful tools like Next.js, Tailwind CSS, and Motion, it blends clean UI with performance.",
+    livelink:"https://newly-io.vercel.app/",
+    githublink:"",
+    img:"Project4.png",
+    techStack:["Next.js","Tailwind","Motion","Aceternity UI","Type Script"]
+
 }
 }
 export const allproject:Project[]=Object.values(ProjectList).slice(4)
-export const project:Project[]=Object.values(ProjectList).slice(0,4)
+export const project:Project[]=Object.values(ProjectList)
